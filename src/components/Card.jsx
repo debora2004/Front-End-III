@@ -1,8 +1,16 @@
-import React from 'react'
+import React from 'react';
+import '../App.css';
 
-export const Card = () => {
+// eslint-disable-next-line react/prop-types
+const Card = ({ nombre, signoZodiacal }) => {
   return (
-    <div>Soy una tarjeta</div>
-  )
-}
+    <div className="resultado">
+      <h2 className="card-title">Resultado</h2>
+      <p className="card-text">
+        Hola, {nombre}. Este es tu signo zodiacal: {signoZodiacal}
+      </p>
+    </div>
+  );
+};
+
 export default Card;
